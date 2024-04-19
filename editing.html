@@ -1,0 +1,74 @@
+<!-- editing.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Editing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Nav Bar -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#">Dash</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Control</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Horizontally arranged sections -->
+        <div class="content">
+            <!-- Left Section -->
+            <div class="left-section">
+                <nav class="side-nav">
+                    <ul>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Grammar</a></li>
+                        <li><a href="#">Find</a></li>
+                        <li><a href="#">Shortcuts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <!-- First-top Section -->
+                <div class="top-section">
+                    <div class="top-header">
+                        <button id="save-button">Save</button>
+                        <nav class="top-right-nav">
+                            <ul>
+                                <li><a href="#">Type</a></li>
+                                <li><a href="#">Sync</a></li>
+                                <li><a href="#">Submit</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Middle Section (Video/Audio player) -->
+                    <div class="media-section">
+                        <video id="video" width="100%" controls>
+                            <source src="path_to_video_file.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Bottom Section (Typing captions) -->
+                <div class="caption-section">
+                    <div class="caption-editor">
+                        <textarea id="caption-input" placeholder="Type captions here..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
